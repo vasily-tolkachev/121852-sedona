@@ -1,7 +1,7 @@
 # Проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Василий Толкачёв](https://htmlacademy.ru/profile/id121852).
-* Наставник: `Unknown`.
+* Наставник: [Ilya Sachev].
 
 ### Немного о себе
 
