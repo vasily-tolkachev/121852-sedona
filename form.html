@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#">Информация</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Оставить отзыв</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Блог шерифа</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="logo" href="#">
+      <img src="http://placehold.it/140x70" width="140" height="70" alt="logo">
+    </a>
+    <button class="main-header__js-toggle-menu  main-header__js-toggle-menu--close" type="button">Меню</button>
+  </header>
+
+  <main>
+    <div class="welcome-block welcome-block--inner">
+      <div class="welcome-block__welcome-label">
+        Welcome
+      </div>
+      <div class="welcome-block__gorgeous-label">
+        &#8211; to the gorgeous &#8211;
+      </div>
+      <div class="welcome-block__sedona-label">
+        Sedona
+      </div>
+      <div class="welcome-block__quote">
+        &laquo;Because the Grand Canyon sucks!&raquo;
+      </div>
+    </div>
+
+    <header class="content-header">
+      <h1 class="content-header__title">Оставьте свой отзыв</h1>
+      <div class="content-header__discription">
+        <p>Помогите нашим отелям стать лучше! Оставьте свой отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+      </div>
+    </header>
+
+    <form class="form" action="/echo" enctype="multipart/form-data" method="post">
+      <fieldset class="form__group">
+        <legend class="form__group-title">Представьтесь, пожалуйста:</legend>
+        <div class="form__fields">
+          <label for="last-name">Фамилия:</label>
+          <input class="form__field" type="text" id="last-name" value="Иванов" name="name" required>
+          <label for="first-name">Имя:</label>
+          <input class="form__field" type="text" id="first-name" value="Петр" name="name" required>
+          <label for="patronymic">Отчество:</label>
+          <input class="form__field" type="text" id="patronymic" value="Александрович" name="name">
+        </div>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend class="form__group-title">Ваше общее впечатление:</legend>
+        <div class="form__fields  form__fields--switch">
+          <input class="form__field" type="radio" id="positive" name="impression" checked>
+          <label for="positive">Скорее положительное</label>
+          <input class="form__field" type="radio" id="negative" name="impression">
+          <label for="negative">Скорее отрицательное</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend class="form__group-title">Даты вашей поездки:</legend>
+        <div class="form__fields">
+          <label for="check-in">Дата приезда</label>
+          <input class="form__field" type="date" id="check-in" value="2015-06-04" name="during-trip" required>
+          <label for="length-of-stay">Длительность пребывания</label>
+          <input class="form__field" type="number" id="length-of-stay" value="14" name="during-trip" required>
+          <label for="check-out">Дата отъезда</label>
+          <input class="form__field" type="date" id="check-out" value="2015-06-28" name="during-trip" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend class="form__group-title">Количество путешественников:</legend>
+        <div class="form__fields">
+          <label for="number-of-travelers">Количество путешественников:</label>
+          <input class="form__field" type="number" id="number-of-travelers" value="2" required>
+          <ul class="form__people-list">
+            <li class="form__people-list-item">
+              <div class="form__people-list-index">
+                <p>&#8470;&nbsp;</p>
+                <p class="form__field">1</p>
+              </div>
+              <div class="form__fields">
+                <label>
+                  Фамилия:
+                  <input class="form__field" type="text" value="Иванов" name="name" required>
+                </label>
+                <label>
+                  Имя:
+                  <input class="form__field" type="text" value="Петр" name="name" required>
+                </label>
+                <label>
+                  Отчество:
+                  <input class="form__field" type="text" value="Александрович" name="name">
+                </label>
+              </div>
+            </li>
+            <li class="form__people-list-item">
+              <div class="form__people-list-index">
+                <p>&#8470;&nbsp;</p>
+                <p class="form__field">2</p>
+              </div>
+              <div class="form__fields">
+                <label>
+                  Фамилия:
+                  <input class="form__field" type="text" value="Иванов" name="name" required>
+                </label>
+                <label>
+                  Имя:
+                  <input class="form__field" type="text" value="Петр" name="name" required>
+                </label>
+                <label>
+                  Отчество:
+                  <input class="form__field" type="text" value="Александрович" name="name">
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend class="form__group-title">Ваше общее впечатление:</legend>
+        <div class="form__fields  form__fields--switch">
+          <input class="form__field" type="checkbox" id="devil-bridge" name="visited-attractions" checked>
+          <label for="devil-bridge">Мост Дьявола</label>
+          <input class="form__field" type="checkbox" id="slide-park" name="visited-attractions">
+          <label for="slide-park"><nobr>Слайд-парк</nobr></label>
+          <input class="form__field" type="checkbox" id="bell-mountain" name="visited-attractions" checked>
+          <label for="bell-mountain"><nobr>Гора-Кологол</nobr></label>
+          <input class="form__field" type="checkbox" id="red-rocks" name="visited-attractions" checked>
+          <label for="red-rocks">Красные скалы</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__group">
+        <legend class="form__group-title">Загрузите фотографии:</legend>
+        <div class="form__fields">
+          <input class="form__field" class="load-photo" type="file" name="photo" multiple accept="image/*">
+          <ul class="form__photo-list">
+            <li class="form__photo-list-item">
+              <button class="form__delete-photo-btn" type="button">Удалить</button>
+              <img src="http://placehold.it/70x70" alt="user photo" width="70" height="70">
+            </li>
+            <li class="form__photo-list-item">
+              <button class="form__delete-photo-btn" type="button">Удалить</button>
+              <img src="http://placehold.it/70x70" alt="user photo" width="70" height="70">
+            </li>
+            <li class="form__photo-list-item">
+              <button class="form__delete-photo-btn" type="button">Удалить</button>
+              <img src="http://placehold.it/70x70" alt="user photo" width="70" height="70">
+            </li>
+            <li class="form__photo-list-item">
+              <button class="form__delete-photo-btn" type="button">Удалить</button>
+              <img src="http://placehold.it/70x70" alt="user photo" width="70" height="70">
+            </li>
+            <li class="form__photo-list-item">
+              <button class="form__delete-photo-btn" type="button">Удалить</button>
+              <img src="http://placehold.it/70x70" alt="user photo" width="70" height="70">
+            </li>
+            <li class="form__photo-list-item">
+              <button class="form__delete-photo-btn" type="button">Удалить</button>
+              <img src="http://placehold.it/70x70" alt="user photo" width="70" height="70">
+            </li>
+            <li class="form__photo-list-item">
+              <button class="form__delete-photo-btn" type="button">Удалить</button>
+              <img src="http://placehold.it/70x70" alt="user photo" width="70" height="70">
+            </li>
+          </ul>
+      </fieldset>
+
+      <input class="form__btn" type="submit" value="Отправить отзыв">
+
+      <section class="pop-up pop-up--success">
+        <h1 class="pop-up__title"><nobr>Что-то</nobr> пошло не&nbsp;так!</h1>
+        <div class="pop-up__discription">
+          <p>Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
+        </div>
+        <button class="form__btn" type="button">Ок</button>
+      </section>
+      <section class="pop-up pop-up--wrong">
+        <h1 class="pop-up__title">Ваш отзыв отправлен!</h1>
+        <div class="pop-up__discription">
+          <p>Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
+        </div>
+        <button class="form__btn" type="button">Закрыть окно</button>
+      </section>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__visit">
+      <a class="main-footer__visit-link" href="#">#Visitsedona</a>
+    </div>
+    <div class="social">
+      <a class="social--twitter" href="#">Twitter</a>
+      <a class="social--facebook" href="#">Facebook</a>
+      <a class="social--you-tube" href="#">YouTube</a>
+    </div>
+    <div class="main-footer__copyright">
+      <a class="main-footer__copyright-link" href="#">Разработано</a>
+    </div>
+  </footer>
+</body>
+
+</html>
