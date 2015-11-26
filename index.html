@@ -28,10 +28,10 @@
     <a class="logo" href="#">
       <img src="http://placehold.it/140x70" width="140" height="70" alt="logo">
     </a>
-    <button class="main-header__js-toggle-menu  main-header__js-toggle-menu--close" type="button">Меню</button>
+    <button class="main-header__toggle-menu  main-header__toggle-menu--close js-toggleMenuBtn" type="button">Меню</button>
   </header>
 
-  <main>
+  <main class="content-wrapper">
     <div class="welcome-block">
       <div class="welcome-block__welcome-label">
         Welcome
@@ -47,54 +47,58 @@
       </div>
     </div>
 
-    <div class="visit-reasons">
-      <header class="visit-reasons__header">
-        <h1 class="visit-reasons__title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
-        <div class="visit-reasons__discription">
+    <div class="content">
+      <header class="content-header">
+        <h1 class="content-title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+        <div class="content-header__description">
           <p>Рассмотрим 5 причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </header>
 
-      <section class="reason  reason--special">
-        <h2 class="reason__title">Настоящий городок</h2>
-        <div class="reason__counter">№1</div>
-        <div class="reason__text">
-          <p>Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+      <section class="reason-with-picture">
+        <div class="reason reason--special">
+          <h2 class="reason__title">Настоящий городок</h2>
+          <div class="reason__counter">№1</div>
+          <div class="reason__text">
+            <p>Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+          </div>
         </div>
-        <img class="reason__img" src="http://placehold.it/320x260" width="320" height="260" alt="Town">
+        <img class="reason-with-picture__img" src="http://placehold.it/320x260" width="320" height="260" alt="Town">
       </section>
 
       <div class="services">
         <div class="services__item  services__item--housing">
           <h3 class="services__title">Жилье</h3>
-          <div class="services__discription">
+          <div class="services__description">
             <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как кино!</p>
           </div>
         </div>
-        <div class="services__item  services__item--housing">
+        <div class="services__item  services__item--food">
           <h3 class="services__title">Еда</h3>
-          <div class="services__discription">
+          <div class="services__description">
             <p>Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь</p>
           </div>
         </div>
-        <div class="services__item  services__item--housing">
+        <div class="services__item  services__item--souvenirs">
           <h3 class="services__title">Сувениры</h3>
-          <div class="services__discription">
+          <div class="services__description">
             <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
           </div>
         </div>
       </div>
 
-      <section class="reason  reason--special">
-        <h2 class="reason__title">Там есть мост дьявола</h2>
-        <div class="reason__counter">№2</div>
-        <div class="reason__text">
-          <p>Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
+      <section class="reason-with-picture">
+        <div class="reason reason--special">
+          <h2 class="reason__title">Там есть мост дьявола</h2>
+          <div class="reason__counter">№2</div>
+          <div class="reason__text">
+            <p>Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
+          </div>
         </div>
-        <img class="reason__img" src="http://placehold.it/320x260" width="320" height="260" alt="Town">
+        <img class="reason-with-picture__img" src="http://placehold.it/320x260" width="320" height="260" alt="Devil's bridge">
       </section>
 
-      <div class="visit-reasons__reasons-container">
+      <div class="content__reasons-container">
         <section class="reason">
           <h2 class="reason__title">Небольшая площадь</h2>
           <div class="reason__counter">№3</div>
@@ -106,7 +110,8 @@
           <h2 class="reason__title">Красивая дорога</h2>
           <div class="reason__counter">№4</div>
           <div class="reason__text">
-            <p>Ехать в&nbsp;Седону из&nbsp;<nobr>Лас-Вегаса</nobr> совсем не&nbsp;скучно!</p>
+            <p>Ехать в&nbsp;Седону из&nbsp;
+              <nobr>Лас-Вегаса</nobr> совсем не&nbsp;скучно!</p>
           </div>
         </section>
         <section class="reason">
@@ -121,7 +126,7 @@
 
     <section class="reservation">
       <h2 class="reservation__header">Заинтересовались?</h2>
-      <div class="reservation__discription">
+      <div class="reservation__description">
         <p>Укажите предпологаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
       </div>
       <button class="find-hotel-btn" type="button">Найти гостиницу</button>
@@ -136,13 +141,13 @@
     <div class="main-footer__visit">
       <a class="main-footer__visit-link" href="#">#Visitsedona</a>
     </div>
-    <div class="social">
-      <a class="social--twitter" href="#">Twitter</a>
-      <a class="social--facebook" href="#">Facebook</a>
-      <a class="social--you-tube" href="#">YouTube</a>
+    <div class="social-links">
+      <a class="social-links__twitter" href="#">Twitter</a>
+      <a class="social-links__facebook" href="#">Facebook</a>
+      <a class="social-links__you-tube" href="#">YouTube</a>
     </div>
     <div class="main-footer__copyright">
-      <a class="main-footer__copyright-link" href="#">Разработано</a>
+      <a class="main-footer__copyright-link" href="#">Разработано HTML Academy</a>
     </div>
   </footer>
 </body>
