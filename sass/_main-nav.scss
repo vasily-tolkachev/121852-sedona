@@ -1,0 +1,29 @@
+.main-nav {
+  a {
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  max-width: 320px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  .main-nav__item {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: 1px $top-border-color solid;
+    border-bottom: 1px $bottom-border-color solid;
+    background-color: $page-blue;
+  }
+  .main-nav__link {
+    color: white;
+  }
+}

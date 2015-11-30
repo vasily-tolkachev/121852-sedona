@@ -1,0 +1,38 @@
+.main-footer{
+  padding: 20px 0;
+  max-width: 320px;
+  margin: 0 auto;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid transparent;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  &__visit{
+    margin: 10px auto;
+  }
+  &__visit-link{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  &__copyright{
+    max-width: 130px;
+    margin: 0 auto;
+    padding: 5px 0px;
+    text-align: left;
+    background: url(../img/copyright.png) no-repeat right;
+    background-position: 102px;
+  }
+  &__copyright-link span{
+    display: none;
+  }
+  &__copyright-link {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
