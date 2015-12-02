@@ -1,10 +1,10 @@
-.welcome-block{
+.welcome-block {
   font-family: 'PT Sans', 'Arial', sans-serif;
   text-align: center;
   background-image: linear-gradient(to bottom, #e3f1fa 20%, #9abfd8 30%, #2b3439 100%);
   background-image: url(../img/welcome.jpg);
-  border: 1px white solid;
-  &__welcome-label{
+  border: 1px solid white;
+  &__welcome-label {
     margin-top: 40px;
     font-size: 50px;
     line-height: 50px;
@@ -12,7 +12,7 @@
     text-transform: uppercase;
     color: $page-blue;
   }
-  &__gorgeous-label{
+  &__gorgeous-label {
     margin-bottom: 45px;
     font-size: 20px;
     line-height: 20px;
@@ -20,7 +20,7 @@
     font-style: italic;
     color: #766357;
   }
-  &__sedona-label{
+  &__sedona-label {
     margin: 55px 20px;
     font-size: 65px;
     line-height: 65px;
@@ -29,7 +29,7 @@
     font-weight: 700;
     color: white;
   }
-  &__quote{
+  &__quote {
     margin: 40px;
     margin-bottom: 55px;
     font-size: 26px;
@@ -38,4 +38,27 @@
     color: white;
     font-style: italic;
   }
+}
+
+.welcome-block--inner {
+  .welcome-block__welcome-label {
+    display: none;
+  }
+  .welcome-block__gorgeous-label {
+    display: none;
+  }
+  .welcome-block__sedona-label {
+    margin: 45px 20px;
+    margin-bottom: 75px;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+  }
+  .welcome-block__quote {
+    display: none;
+  }
+  background: url(../img/inner-welcome.jpg) 0px -55px no-repeat;
 }

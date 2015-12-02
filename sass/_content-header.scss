@@ -1,4 +1,4 @@
-.content-header{
+.content-header {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   text-transform: uppercase;
@@ -7,8 +7,27 @@
   line-height: 26px;
   font-weight: 400;
   padding: 20px;
-  &__description{
+  &__description {
     margin: 25px 10px;
-
   }
+}
+
+.content-header--form-page {
+  margin-top: 33px;
+  padding: 20px 10px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid $page-gray;
+  p {
+    margin-bottom: 18px;
+  }
+  .content-header__description {
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+.content-header--popup-wrong,
+.content-header--popup-success {
+  max-width: 320px;
+  margin: 0 auto;
 }
