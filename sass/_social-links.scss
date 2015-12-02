@@ -1,0 +1,24 @@
+.social-links{
+  max-width: 150px;
+  margin: 35px auto;
+  margin-bottom: 40px;
+  &__twitter,
+  &__facebook,
+  &__you-tube{
+    display: inline-block;
+    vertical-align: top;
+    width: 47px;
+    height: 48px;
+    font-size: 0px;
+    text-decoration: none;
+  }
+  &__twitter{
+    background: $page-blue url(../img/social-twitter.png) no-repeat center;
+  }
+  &__facebook{
+    background: $page-blue url(../img/social-facebook.png) no-repeat center;
+  }
+  &__you-tube{
+    background: $page-blue url(../img/social-youtube.png) no-repeat center;
+  }
+}

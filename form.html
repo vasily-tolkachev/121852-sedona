@@ -11,26 +11,26 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#">Информация</a>
+          <a class="main-nav__link" href="#">Информация</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Оставить отзыв</a>
+          <a class="main-nav__link" href="#">Оставить отзыв</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Блог шерифа</a>
+          <a class="main-nav__link" href="#">Блог шерифа</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">Гостиницы</a>
+          <a class="main-nav__link" href="#">Гостиницы</a>
         </li>
       </ul>
     </nav>
     <a class="logo" href="#">
       <img src="http://placehold.it/140x70" width="140" height="70" alt="logo">
     </a>
-    <button class="main-header__js-toggle-menu  main-header__js-toggle-menu--close" type="button">Меню</button>
+    <button class="main-header__toggle-menu  main-header__toggle-menu--close js-toggleMenuBtn" type="button">Меню</button>
   </header>
 
-  <main>
+  <main class="content-wrapper">
     <div class="welcome-block welcome-block--inner">
       <div class="welcome-block__welcome-label">
         Welcome
@@ -47,8 +47,8 @@
     </div>
 
     <header class="content-header">
-      <h1 class="content-header__title">Оставьте свой отзыв</h1>
-      <div class="content-header__discription">
+      <h1 class="content-title">Оставьте свой отзыв</h1>
+      <div class="content-header__description">
         <p>Помогите нашим отелям стать лучше! Оставьте свой отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
       </div>
     </header>
@@ -57,11 +57,11 @@
       <fieldset class="form__group">
         <legend class="form__group-title">Представьтесь, пожалуйста:</legend>
         <div class="form__fields">
-          <label for="last-name">Фамилия:</label>
+          <label class="form__label" for="last-name">Фамилия:</label>
           <input class="form__field" type="text" id="last-name" value="Иванов" name="name" required>
-          <label for="first-name">Имя:</label>
+          <label class="form__label" for="first-name">Имя:</label>
           <input class="form__field" type="text" id="first-name" value="Петр" name="name" required>
-          <label for="patronymic">Отчество:</label>
+          <label class="form__label" for="patronymic">Отчество:</label>
           <input class="form__field" type="text" id="patronymic" value="Александрович" name="name">
         </div>
       </fieldset>
@@ -100,18 +100,12 @@
                 <p class="form__field">1</p>
               </div>
               <div class="form__fields">
-                <label>
-                  Фамилия:
-                  <input class="form__field" type="text" value="Иванов" name="name" required>
-                </label>
-                <label>
-                  Имя:
-                  <input class="form__field" type="text" value="Петр" name="name" required>
-                </label>
-                <label>
-                  Отчество:
-                  <input class="form__field" type="text" value="Александрович" name="name">
-                </label>
+                <label class="form__label" for="travelers1-last-name">Фамилия:</label>
+                <input class="form__field" type="text" id="travelers1-last-name" value="Иванов" name="name" required>
+                <label class="form__label" for="travelers1-first-name">Имя:</label>
+                <input class="form__field" type="text" id="travelers1-first-name" value="Петр" name="name" required>
+                <label class="form__label" for="travelers1-patronymic">Отчество:</label>
+                <input class="form__field" type="text" id="travelers1-patronymic" value="Александрович" name="name">
               </div>
             </li>
             <li class="form__people-list-item">
@@ -120,18 +114,12 @@
                 <p class="form__field">2</p>
               </div>
               <div class="form__fields">
-                <label>
-                  Фамилия:
-                  <input class="form__field" type="text" value="Иванов" name="name" required>
-                </label>
-                <label>
-                  Имя:
-                  <input class="form__field" type="text" value="Петр" name="name" required>
-                </label>
-                <label>
-                  Отчество:
-                  <input class="form__field" type="text" value="Александрович" name="name">
-                </label>
+                <label class="form__label" for="travelers2-last-name">Фамилия:</label>
+                <input class="form__field" type="text" id="travelers2-last-name" value="Иванов" name="name" required>
+                <label class="form__label" for="travelers2-first-name">Имя:</label>
+                <input class="form__field" type="text" id="travelers2-first-name" value="Петр" name="name" required>
+                <label class="form__label" for="travelers2-patronymic">Отчество:</label>
+                <input class="form__field" type="text" id="travelers2-patronymic" value="Александрович" name="name">
               </div>
             </li>
           </ul>
@@ -144,9 +132,13 @@
           <input class="form__field" type="checkbox" id="devil-bridge" name="visited-attractions" checked>
           <label for="devil-bridge">Мост Дьявола</label>
           <input class="form__field" type="checkbox" id="slide-park" name="visited-attractions">
-          <label for="slide-park"><nobr>Слайд-парк</nobr></label>
+          <label for="slide-park">
+            <nobr>Слайд-парк</nobr>
+          </label>
           <input class="form__field" type="checkbox" id="bell-mountain" name="visited-attractions" checked>
-          <label for="bell-mountain"><nobr>Гора-Кологол</nobr></label>
+          <label for="bell-mountain">
+            <nobr>Гора-Кологол</nobr>
+          </label>
           <input class="form__field" type="checkbox" id="red-rocks" name="visited-attractions" checked>
           <label for="red-rocks">Красные скалы</label>
         </div>
@@ -188,22 +180,7 @@
           </ul>
       </fieldset>
 
-      <input class="form__btn" type="submit" value="Отправить отзыв">
-
-      <section class="pop-up pop-up--success">
-        <h1 class="pop-up__title"><nobr>Что-то</nobr> пошло не&nbsp;так!</h1>
-        <div class="pop-up__discription">
-          <p>Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
-        </div>
-        <button class="form__btn" type="button">Ок</button>
-      </section>
-      <section class="pop-up pop-up--wrong">
-        <h1 class="pop-up__title">Ваш отзыв отправлен!</h1>
-        <div class="pop-up__discription">
-          <p>Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
-        </div>
-        <button class="form__btn" type="button">Закрыть окно</button>
-      </section>
+      <input class="button button--form-btn" type="submit" value="Отправить отзыв">
     </form>
   </main>
 
@@ -211,15 +188,36 @@
     <div class="main-footer__visit">
       <a class="main-footer__visit-link" href="#">#Visitsedona</a>
     </div>
-    <div class="social">
-      <a class="social--twitter" href="#">Twitter</a>
-      <a class="social--facebook" href="#">Facebook</a>
-      <a class="social--you-tube" href="#">YouTube</a>
+    <div class="social-links">
+      <a class="social-links__twitter" href="#">Twitter</a>
+      <a class="social-links__facebook" href="#">Facebook</a>
+      <a class="social-links__you-tube" href="#">YouTube</a>
     </div>
     <div class="main-footer__copyright">
-      <a class="main-footer__copyright-link" href="#">Разработано</a>
+      <a class="main-footer__copyright-link" href="#">Разработано  HTML Academy</a>
     </div>
   </footer>
+
+  <div class="popup popup--wrong">
+    <div class="popup__title">
+      <nobr>Что-то</nobr> пошло не&nbsp;так!
+    </div>
+    <div class="popup__description">
+      <p>Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
+    </div>
+    <button class="button button--popup-btn" type="button">Ок</button>
+  </div>
+
+  <div class="popup popup--success">
+    <div class="popup__title">
+      Ваш отзыв отправлен!
+    </div>
+    <div class="popup__description">
+      <p>Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
+    </div>
+    <button class="button button--popup-btn" type="button">Ок</button>
+  </div>
+
 </body>
 
 </html>

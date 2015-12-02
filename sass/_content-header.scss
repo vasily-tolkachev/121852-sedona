@@ -1,0 +1,14 @@
+.content-header{
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  padding: 20px;
+  &__description{
+    margin: 25px 10px;
+
+  }
+}
