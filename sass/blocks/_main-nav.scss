@@ -7,7 +7,6 @@
     padding: 0;
     list-style: none;
   }
-  max-width: 320px;
   font-family: 'PT Sans',
   'Arial',
   sans-serif;
@@ -17,14 +16,36 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  .main-nav__item {
+  &__item {
     padding-top: 7px;
     padding-bottom: 7px;
     border-top: 1px $top-border-color solid;
     border-bottom: 1px $bottom-border-color solid;
     background-color: $page-blue;
   }
-  .main-nav__link {
+  &__link {
     color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__item{
+      font-size: 14px;
+      display: inline-block;
+      vertical-align: top;
+      background-color: white;
+      border-top: 0;
+      border-bottom: 0;
+    }
+    &__link{
+      color: black;
+    }
   }
 }

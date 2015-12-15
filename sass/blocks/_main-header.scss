@@ -1,6 +1,6 @@
 .main-header {
   position: relative;
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -74,4 +74,14 @@
 .main-header__toggle-menu--close span::after {
   bottom: 0px;
   transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .main-header {
+
+    width: 768px;
+    &__toggle-menu {
+      display: none;
+    }
+  }
 }

@@ -1,0 +1,147 @@
+.reason {
+  text-align: center;
+  background-color: $reason-color;
+  border: 1px $reason-color solid;
+  border-bottom: 1px #d6d6d6 solid;
+  padding: 9px 0;
+
+  @media (min-width: 768px) {
+    padding: 45px 55px 30px 43px;
+    border: 1px transparent solid;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+
+    @media (min-width: 768px) {
+      font-size: 21px;
+      margin-top: 0;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 78px;
+      margin-right: 78px;
+    }
+  }
+
+  &__text {
+    margin: 15px 6px 17px 6px;
+    @media (min-width: 768px) {
+      margin: 20px 0 10px 0;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 20px 10px 35px 10px;
+    }
+  }
+
+  &:last-child {
+    border-bottom: 1px transparent solid;
+  }
+
+  &--first:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 768px;
+    background-color: white;
+    background-image: url(../img/reason-triangle.svg);
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--special {
+    background-color: $page-blue;
+    color: white;
+    padding: 20px;
+    border: 1px $page-blue solid;
+
+    @media (min-width: 768px) {
+      padding: 44px 45px 30px 45px;
+    }
+
+  }
+
+  &--first {
+    position: relative;
+    padding-top: 40px;
+
+    @media (min-width: 768px) {
+      padding-top: 20px;
+    }
+  }
+
+}
+
+.reasons-container {
+  background-color: $reason-color;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    display: flex;
+  }
+}
+
+.reason-with-picture {
+  &__img {
+    width: 320px;
+    height: 256px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    .reason {
+      box-sizing: border-box;
+      flex-basis: 256px;
+    }
+
+    &__img {
+      width: 512px;
+      height: 256px;
+    }
+
+    &__pct {
+      flex-basis: 512px;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+   @media (min-width: 768px) {
+     .reason {
+      flex-basis: 400px;
+    }
+
+    &__img {
+      width: 800px;
+      height: 256px;
+    }
+
+    &__pct {
+      flex-basis: 800px;
+    }
+   }
+
+}
+
+

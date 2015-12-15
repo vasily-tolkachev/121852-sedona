@@ -1,0 +1,26 @@
+.social-links {
+  max-width: 150px;
+  margin: 35px auto;
+  margin-bottom: 40px;
+
+  &__btn {
+    background-color: $page-blue;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    @include inline-block;
+    width: 47px;
+    height: 48px;
+    font-size: 0;
+    text-decoration: none;
+
+    &--twitter {
+      background-image: url(../img/social-twitter.png);
+    }
+    &--facebook {
+      background-image: url(../img/social-facebook.png);
+    }
+    &--you-tube {
+      background-image: url(../img/social-youtube.png);
+    }
+  }
+}

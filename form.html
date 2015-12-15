@@ -57,20 +57,26 @@
 
     <form class="form" action="/echo" enctype="multipart/form-data" method="post">
       <fieldset class="form__group">
-        <legend class="form__group-title">Представьтесь, пожалуйста:</legend>
-        <div class="form__fields">
-          <label class="form__label" for="last-name">Фамилия:</label>
+      <legend class="form__group-title">Представьтесь, пожалуйста:</legend>
+      <div class="form__fields">
+        <div class="entry-field">
+          <label class="form__label  form__label--required" for="last-name">Фамилия:</label>
           <input class="form__field" type="text" id="last-name" value="Иванов" name="name" required>
-          <label class="form__label" for="first-name">Имя:</label>
+        </div>
+        <div class="entry-field">
+          <label class="form__label  form__label--required" for="first-name">Имя:</label>
           <input class="form__field" type="text" id="first-name" value="Петр" name="name" required>
+        </div>
+        <div class="entry-field">
           <label class="form__label" for="patronymic">Отчество:</label>
           <input class="form__field" type="text" id="patronymic" value="Александрович" name="name">
         </div>
-      </fieldset>
+      </div>
+    </fieldset>
 
       <fieldset class="form__group">
-        <legend class="form__group-title">Ваше общее впечатление:</legend>
-        <div class="form__fields  form__fields--switch  form__fields--radio">
+        <legend class="form__group-title  form__group-title--switch">Ваше общее впечатление:</legend>
+        <div class="form__fields  form__fields--switch">
           <input class="form__field" type="radio" id="positive" name="impression" checked>
           <label class="form__label" for="positive">Скорее положительное</label>
           <input class="form__field" type="radio" id="negative" name="impression">
@@ -79,36 +85,58 @@
       </fieldset>
 
       <fieldset class="form__group">
-        <legend class="form__group-title">Даты вашей поездки:</legend>
+        <legend class="form__group-title  form__group-title--travel-dates">Даты вашей поездки:</legend>
         <div class="form__fields">
-          <label class="form__label" for="check-in">Дата приезда</label>
-          <input class="form__field" type="date" id="check-in" value="2015-06-04" name="during-trip" required>
-          <label class="form__label" for="length-of-stay">Длительность пребывания</label>
-          <input class="form__field" type="number" id="length-of-stay" value="14" name="during-trip" required>
-          <label class="form__label" for="check-out">Дата отъезда</label>
-          <input class="form__field" type="date" id="check-out" value="2015-06-28" name="during-trip" required>
+          <div class="entry-field">
+            <label class="form__label  form__label--required" for="check-in">Дата приезда:</label>
+            <input class="form__field" type="date" id="check-in" value="2015-06-04" name="during-trip" required>
+          </div>
+          <div class="entry-field">
+            <label class="form__label  form__label--required" for="length-of-stay">Дней пребывания:</label>
+            <div class="form__number-field">
+              <button class="form__number-field-btn" type="button">-</button>
+              <input class="form__field" type="number" id="length-of-stay" value="14" name="during-trip" required>
+              <button class="form__number-field-btn" type="button">+</button>
+            </div>
+          </div>
+          <div class="entry-field">
+            <label class="form__label  form__label--required" for="check-out">Дата отъезда:</label>
+            <input class="form__field" type="date" id="check-out" value="2015-06-28" name="during-trip" required>
+          </div>
         </div>
       </fieldset>
 
       <fieldset class="form__group">
-        <legend class="form__group-title">
+        <legend class="form__group-title  form__group-title--travelers-number">
           <nobr>Кол-во</nobr> путешественников:</legend>
-        <div class="form__fields">
-          <label class="form__label" for="number-of-travelers">Количество путешественников:</label>
-          <input class="form__field" type="number" id="number-of-travelers" value="2" required>
+        <div class="form__fields  form__fields--travelers">
+          <div class="entry-field ">
+            <label class="form__label  form__label--required" for="number-of-travelers">Коли-во путешественников:</label>
+            <div class="form__number-field">
+              <button class="form__number-field-btn" type="button">-</button>
+              <input class="form__field" type="number" id="number-of-travelers" value="2" required>
+              <button class="form__number-field-btn" type="button">+</button>
+            </div>
+          </div>
           <ul class="form__people-list">
             <li class="form__people-list-item">
               <div class="form__people-list-index">
                 <label class="form__label" for="travelers1-last-index">&#8470;&nbsp;</label>
                 <input class="form__field" type="text" id="travelers1-index" value="1" name="name">
               </div>
-              <div class="form__fields">
-                <label class="form__label" for="travelers1-last-name">Фамилия:</label>
-                <input class="form__field" type="text" id="travelers1-last-name" value="Иванов" name="name" required>
-                <label class="form__label" for="travelers1-first-name">Имя:</label>
-                <input class="form__field" type="text" id="travelers1-first-name" value="Петр" name="name" required>
-                <label class="form__label" for="travelers1-patronymic">Отчество:</label>
-                <input class="form__field" type="text" id="travelers1-patronymic" value="Александрович" name="name">
+              <div class="form__fields  form__fields--travelers-fields">
+                <div class="entry-field">
+                  <label class="form__label  form__label--required" for="travelers1-last-name">Фамилия:</label>
+                  <input class="form__field" type="text" id="travelers1-last-name" value="Иванов" name="name" required>
+                </div>
+                <div class="entry-field">
+                  <label class="form__label  form__label--required" for="travelers1-first-name">Имя:</label>
+                  <input class="form__field" type="text" id="travelers1-first-name" value="Петр" name="name" required>
+                </div>
+                <div class="entry-field">
+                  <label class="form__label" for="travelers1-patronymic">Отчество:</label>
+                  <input class="form__field" type="text" id="travelers1-patronymic" value="Александрович" name="name">
+                </div>
               </div>
             </li>
             <li class="form__people-list-item">
@@ -116,21 +144,27 @@
                 <label class="form__label" for="travelers2-last-index">&#8470;&nbsp;</label>
                 <input class="form__field" type="text" id="travelers2-index" value="2" name="name">
               </div>
-              <div class="form__fields">
-                <label class="form__label" for="travelers2-last-name">Фамилия:</label>
-                <input class="form__field" type="text" id="travelers2-last-name" value="Иванов" name="name" required>
-                <label class="form__label" for="travelers2-first-name">Имя:</label>
-                <input class="form__field" type="text" id="travelers2-first-name" value="Петр" name="name" required>
-                <label class="form__label" for="travelers2-patronymic">Отчество:</label>
-                <input class="form__field" type="text" id="travelers2-patronymic" value="Александрович" name="name">
+              <div class="form__fields    form__fields--travelers-fields">
+                <div class="entry-field">
+                  <label class="form__label  form__label--required" for="travelers2-last-name">Фамилия:</label>
+                  <input class="form__field" type="text" id="travelers2-last-name" value="Иванов" name="name" required>
+                </div>
+                <div class="entry-field">
+                  <label class="form__label  form__label--required" for="travelers2-first-name">Имя:</label>
+                  <input class="form__field" type="text" id="travelers2-first-name" value="Петр" name="name" required>
+                </div>
+                <div class="entry-field">
+                  <label class="form__label" for="travelers2-patronymic">Отчество:</label>
+                  <input class="form__field" type="text" id="travelers2-patronymic" value="Александрович" name="name">
+                </div>
               </div>
             </li>
           </ul>
         </div>
       </fieldset>
 
-      <fieldset class="form__group">
-        <legend class="form__group-title">Ваше общее впечатление:</legend>
+      <fieldset class="form__group form__group--attraction">
+        <legend class="form__group-title  form__group-title--attraction">Посещенные достопримечательности:</legend>
         <div class="form__fields  form__fields--switch  form__fields--checkbox">
           <input class="form__field" type="checkbox" id="devil-bridge" name="visited-attractions" checked>
           <label class="form__label" for="devil-bridge">Мост Дьявола</label>

@@ -1,0 +1,12 @@
+@mixin inline-block($valign: top) {
+    display: inline-block;
+    vertical-align: $valign;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

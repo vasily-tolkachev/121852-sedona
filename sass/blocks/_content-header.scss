@@ -1,15 +1,19 @@
 .content-header {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
   text-align: center;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
   padding: 20px;
+
   &__description {
-    margin: 25px 10px;
+    line-height: 26px;
+    margin: 28px 10px -10px 10px;
   }
+}
+
+.content-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    margin: 15px 10px 20px 10px;
 }
 
 .content-header--form-page {
@@ -31,3 +35,5 @@
   max-width: 320px;
   margin: 0 auto;
 }
+
+
