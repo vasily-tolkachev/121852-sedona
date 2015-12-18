@@ -1,7 +1,5 @@
 .social-links {
-  max-width: 150px;
-  margin: 35px auto;
-  margin-bottom: 40px;
+  margin: 35px auto 40px auto;
 
   &__btn {
     background-color: $page-blue;
@@ -14,13 +12,13 @@
     text-decoration: none;
 
     &--twitter {
-      background-image: url(../img/social-twitter.png);
+      background-image: url(../img/icon-twitter.svg);
     }
     &--facebook {
-      background-image: url(../img/social-facebook.png);
+      background-image: url(../img/icon-facebook.svg);
     }
     &--you-tube {
-      background-image: url(../img/social-youtube.png);
+      background-image: url(../img/icon-youtube.svg);
     }
   }
 }

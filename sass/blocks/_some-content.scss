@@ -1,0 +1,84 @@
+.main-wraper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.button {
+  @input btn-reset();
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 26px;
+  border: 0;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  display: block;
+  overflow: hidden;
+
+  width: 280px;
+  padding: 16px 0;
+  margin: 29px auto 35px auto;
+
+  background-color: $page-blue;
+  color: white;
+
+  &--popup {
+    width: 180px;
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  &--popup-success {
+    width: 280px;
+    margin-top: 0;
+    font-size: 18px;
+    margin: 55px auto 20px auto;
+    box-shadow: 0 0 0 20px #f2f2f2;
+  }
+}
+
+.reservation {
+  text-align: center;
+  line-height: 24px;
+  padding: 10px 20px;
+
+  &__header {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 35px;
+  }
+}
+
+.map {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    &__reasons-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .content-wrapper{
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-wrapper{
+    width: 1200px;
+  }
+}
+

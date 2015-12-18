@@ -2,12 +2,12 @@
   text-align: left;
   padding: 0 20px;
   margin-top: 30px;
+  padding-bottom: 20px;
 
   &__item {
     display: block;
     position: relative;
     padding-left: 50px;
-    border: 1px transparent solid;
   }
 
   &__item:before {
@@ -21,31 +21,32 @@
   }
 
   &__title {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    padding-top: 10px;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
   }
 
-}
-
-.services__item--housing {
-
-     background: url(../img/home.png) no-repeat;
+  &__description {
+    margin-top: -3px;
+  }
 
 }
 
-.services__item--food {
-
-     background: url(../img/food.png) no-repeat;
-
+.services__item--housing:before {
+  background: url(../img/icon-house.svg) no-repeat;
+  background-size: 100%;
 }
 
-.services__item--souvenirs {
+.services__item--food:before {
+  background: url(../img/icon-burger.svg) no-repeat;
+  background-size: 100%;
+  background-position: 0 5px;
+}
 
-     background: url(../img/souvenirs.png) no-repeat;
-
+.services__item--souvenirs:before {
+  background: url(../img/icon-gift.svg) no-repeat;
+  background-size: 80%;
 }
 
 @media (min-width: 768px) {

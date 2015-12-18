@@ -1,31 +1,34 @@
 .main-nav {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+
   a {
     text-decoration: none;
   }
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  font-family: 'PT Sans',
-  'Arial',
-  sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
+
   &__item {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 7px 0;
     border-top: 1px $top-border-color solid;
     border-bottom: 1px $bottom-border-color solid;
     background-color: $page-blue;
   }
+
+  .main-nav__right-nav &__item:last-of-type {
+    box-shadow: inset 1px -17px 16px -16px rgba(0,0,0,0.23);
+  }
+
   &__link {
     color: white;
   }
+
 }
 
 @media (min-width: 768px) {

@@ -1,10 +1,45 @@
 .content-header {
   text-align: center;
-  padding: 20px;
+  padding-top: 12px;
 
   &__description {
     line-height: 26px;
-    margin: 28px 10px -10px 10px;
+    margin: 25px
+  }
+
+  &--form-page {
+    border-bottom: 1px solid $page-gray;
+    padding-top: 48px;
+
+    .content-header__description {
+      line-height: 24px;
+      margin: 19px;
+    }
+  }
+
+  &--popup-success,
+  &--popup-wrong {
+    width: 320px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+
+    .content-header__description {
+      margin: 25px 40px ;
+      line-height: 24px;
+    }
+
+    box-shadow: 0px 16px 42px -12px rgba(0,0,0,0.23);
+  }
+
+  &--popup-wrong {
+    top: 2945px;
+  }
+
+   &--popup-success {
+    top: 3276px;
   }
 }
 
@@ -13,27 +48,6 @@
     font-weight: 700;
     line-height: 26px;
     text-align: center;
-    margin: 15px 10px 20px 10px;
+    margin: 25px;
 }
-
-.content-header--form-page {
-  margin-top: 33px;
-  padding: 20px 10px;
-  padding-bottom: 0px;
-  border-bottom: 1px solid $page-gray;
-  p {
-    margin-bottom: 18px;
-  }
-  .content-header__description {
-    line-height: 24px;
-    margin-bottom: 0px;
-  }
-}
-
-.content-header--popup-wrong,
-.content-header--popup-success {
-  max-width: 320px;
-  margin: 0 auto;
-}
-
 
