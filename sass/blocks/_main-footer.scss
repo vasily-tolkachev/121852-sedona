@@ -36,16 +36,19 @@
     top: -5px;
     right: 5px;
   }
+
   &__copyright-link span {
     display: none;
   }
-}
 
-@media (min-width: 768px) {
-    .main-footer{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      max-width: 768px;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 27px;
+
+    &__visit {
+      margin: 0 0 0 34px;
     }
+  }
 }

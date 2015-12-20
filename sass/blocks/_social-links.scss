@@ -2,6 +2,7 @@
   margin: 35px auto 40px auto;
 
   &__btn {
+    margin: 1px;
     background-color: $page-blue;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -14,11 +15,17 @@
     &--twitter {
       background-image: url(../img/icon-twitter.svg);
     }
+
     &--facebook {
       background-image: url(../img/icon-facebook.svg);
     }
+
     &--you-tube {
       background-image: url(../img/icon-youtube.svg);
     }
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 127px 0 110px;
   }
 }

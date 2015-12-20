@@ -4,7 +4,12 @@
 
   &__description {
     line-height: 26px;
-    margin: 25px
+    margin: 25px;
+
+    @media (min-width: 768px) {
+      margin-top: 28px;
+      margin-bottom: 50px;
+    }
   }
 
   &--form-page {
@@ -25,29 +30,34 @@
     left: 0;
     right: 0;
     background-color: white;
+    box-shadow: 0px 16px 42px -12px rgba(0,0,0,0.23);
 
     .content-header__description {
       margin: 25px 40px ;
       line-height: 24px;
     }
-
-    box-shadow: 0px 16px 42px -12px rgba(0,0,0,0.23);
   }
 
   &--popup-wrong {
     top: 2945px;
   }
 
-   &--popup-success {
+  &--popup-success {
     top: 3276px;
   }
 }
 
 .content-title {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  margin: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
     line-height: 26px;
-    text-align: center;
-    margin: 25px;
+    margin: 43px 100px 0 100px;
+  }
 }
 
